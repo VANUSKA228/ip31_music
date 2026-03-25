@@ -1,0 +1,93 @@
+/* Основные настройки страницы */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Общий контейнер с черной рамкой */
+#wrapper {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #000000; /* Черная рамка как на фото */
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+/* Шапка с меню (бирюзовый фон) */
+#header {
+    background-color: #16a085; /* Тот самый цвет морской волны */
+    padding: 10px 15px;
+    border-bottom: 2px solid #000000;
+}
+
+#menu {
+    display: flex;
+    gap: 30px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
+
+#menu a:hover {
+    opacity: 0.8;
+}
+
+/* Контейнер для контента */
+#container {
+    flex: 1;
+    padding: 40px; /* Большие отступы внутри */
+}
+
+/* Заголовок таблицы */
+h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Стилизация таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+}
+
+/* Заголовки столбцов с серым фоном */
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Ячейки таблицы */
+td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    font-size: 14px;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+/* Полоски через одну (зебра) */
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Футер с черной рамкой сверху */
+#footer {
+    border-top: 2px solid #000000;
+    padding: 10px 15px;
+    font-size: 14px;
+    background: #fff;
+}
