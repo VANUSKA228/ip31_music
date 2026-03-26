@@ -21,3 +21,12 @@ class TrackForm(forms.ModelForm):
             'duration': 'Длительность (сек)',
             'genres': 'Выберите жанры (зажмите Ctrl)',
         }
+        
+class ArtistForm(forms.ModelForm)
+    class Meta:
+        model = Artist
+        fields = '__all__'
+        labels = {
+            'name': 'Имя / название ',
+            'image': 'Фотография',
+        }
