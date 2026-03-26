@@ -31,5 +31,5 @@ urlpatterns = [
     path('add_track/', views.add_track, name='tracks'),
     path('deletetrack/<int:id>', views.delltracks), 
     path('editrack/<int:id>', views.edit_tracks),
-
+    path('artists/', views.artists),
 ]
