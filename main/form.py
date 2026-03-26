@@ -1,5 +1,5 @@
 from django import forms
-from .models import Genre, Track
+from .models import Genre, Track, Artist
 
 
 class GenreForm(forms.ModelForm):

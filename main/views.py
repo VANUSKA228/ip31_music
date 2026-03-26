@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import Genre,Track
-from .form import GenreForm, TrackForm
+from .models import Genre,Track,Artist
+from .form import GenreForm, TrackForm, ArtistForm
 
 # Create your views here.
 def index(request):
@@ -71,3 +71,6 @@ def edit_tracks(request, id):
     else:
         form = TrackForm(instance=g)
     return render(request, "add_track.html", {'form': form})
+def artists(request):
+    a = Artist.objects.all()
+    return render(request, 'artists.html', {'artists': a})
